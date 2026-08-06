@@ -1,4 +1,13 @@
 # Image Dehazing With Contextualized Attentive U-NET
+
+## THIS JUST A PYTORCH REWRITE
+Kindly refer the original work, https://github.com/yeanwei97/DSEU
+
+**Disclose: Usage of AI is used in-terms of reference** 
+
+### Changes differ from the original
+1. The kernel init used pytorch default kernel init, rather than the proposed "he_normal"
+
 ## Dilated Squeeze-and-Excitation U-net (DSEU)
 An end-to-end convolutional network an for image dehazing. Our proposed U-Net based architecture employs Squeeze-and-Excitation (SE)
 blocks at the skip connections to enforce channel-wise attention and parallelized dilated convolution blocks at the bottleneck to 
@@ -23,17 +32,17 @@ Average PSNR and SSIM on Synthetic Objective Test Set(SOTS) indoor and outdoor i
 
 ## Sample Visual Results
 Results on synthetic hazy images (HSTS)
-Input Image | DSEU(ITS) | DSEU(Combine) | DSEU(OTS) | Ground Truth |
-------------|-----------|---------------|-----------|---------------
-![](image/0106hazy.jpg) | ![](image/indoor0106.png) | ![](image/combine0106.png) | ![](image/outdoor0106.png) | ![](image/0106.png)
-![](image/5920.jpg) | ![](image/indoor5920.png) | ![](image/combine5920.png) | ![](image/outdoor5920.png) | ![](image/5920gt.jpg)
-![](image/1352.jpg) | ![](image/indoor1352.png) | ![](image/combine1352.png) | ![](image/outdoor1352.png) | ![](image/1352gt.jpg)
+| Input Image | DSEU(ITS) | DSEU(Combine) | DSEU(OTS) | Ground Truth |
+|-------------|-----------|---------------|-----------|--------------|
+| ![](image/0106hazy.jpg) | ![](image/indoor0106.png) | ![](image/combine0106.png) | ![](image/outdoor0106.png) | ![](image/0106.png) |
+| ![](image/5920.jpg) | ![](image/indoor5920.png) | ![](image/combine5920.png) | ![](image/outdoor5920.png) | ![](image/5920gt.jpg) |
+| ![](image/1352.jpg) | ![](image/indoor1352.png) | ![](image/combine1352.png) | ![](image/outdoor1352.png) | ![](image/1352gt.jpg) |
 
 Results on real hazy images
-Input Image | DSEU(ITS) | DSEU(Combine) | DSEU(OTS)
-------------|-----------|---------------|----------
-![](image/newyork.png) | ![](image/indoornewyork.png) | ![](image/combinenewyork.png) | ![](image/outdoornewyork.png) 
-![](image/klcc.jpeg) | ![](image/indoorklcc.png) | ![](image/combineklcc.png) | ![](image/outdoorklcc.png)
+| Input Image | DSEU(ITS) | DSEU(Combine) | DSEU(OTS) |
+|-------------|-----------|---------------|-----------|
+| ![](image/newyork.png) | ![](image/indoornewyork.png) | ![](image/combinenewyork.png) | ![](image/outdoornewyork.png) |
+| ![](image/klcc.jpeg) | ![](image/indoorklcc.png) | ![](image/combineklcc.png) | ![](image/outdoorklcc.png) |
 
 **More Comparative Results on State-Of-The-Art on**: https://yeanwei97.github.io/dseuresultpage.github.io/
 
