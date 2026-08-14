@@ -8,6 +8,11 @@ Kindly refer the original work, https://github.com/yeanwei97/DSEU
 ### Changes differ from the original
 1. The kernel init used pytorch default kernel init, rather than the proposed "he_normal"
 
+### Changes in Datasets
+Due to natural of outdated link, I will using the updated link here  
+1. [RESIDE-standard](https://sites.google.com/view/reside-dehaze-datasets/reside-standard)
+2. [RESIDE-β](https://sites.google.com/view/reside-dehaze-datasets/reside-%CE%B2)
+
 ## Dilated Squeeze-and-Excitation U-net (DSEU)
 An end-to-end convolutional network an for image dehazing. Our proposed U-Net based architecture employs Squeeze-and-Excitation (SE)
 blocks at the skip connections to enforce channel-wise attention and parallelized dilated convolution blocks at the bottleneck to 
